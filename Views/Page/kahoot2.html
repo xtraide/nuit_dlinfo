@@ -1,27 +1,27 @@
    <section>
-    <div class="1">
+    <div class="one">
         <h2 class="question">Question</h2>
         <div class="reponse_affiche">
         <input class="reponse" type="text">
         <input class="valider" type="button" value="valider">
     </div>
 </div>
-<div class="2">
-    <h2 class="question">Question</h2>
+<div class="invisible two">
+    <h2 class="question 2">Question 2</h2>
+    <div class="reponse_affiche_deux">
+    <input class="reponse_deux" type="text">
+    <input class="valider_deux" type="button" value="valider">
+</div>
+</div>
+<div class="invisible three">
+    <h2 class="question 3">Question 3</h2>
     <div class="reponse_affiche">
-    <input class="reponse" type="text">
+    <input class="reponse_trois" type="text">
     <input class="valider" type="button" value="valider">
 </div>
 </div>
-<div class="3">
-    <h2 class="question">Question</h2>
-    <div class="reponse_affiche">
-    <input class="reponse" type="text">
-    <input class="valider" type="button" value="valider">
-</div>
-</div>
-<div class="4">
-    <h2 class="question">Question</h2>
+<div class="invisible four">
+    <h2 class="question 4">Question 4</h2>
     <div class="reponse_affiche">
     <input class="reponse" type="text">
     <input class="valider" type="button" value="valider">
@@ -30,3 +30,12 @@
     </section>
     <script type="module" src="../Template/js/function2.js"></script>
     <script type="module" src="../Template/js/kahoot.js"></script>
+
+    <style>
+        .visible {
+            display: block;
+        }
+        .invisible {
+            display: none;
+        }
+    </style>
