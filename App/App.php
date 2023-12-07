@@ -58,7 +58,7 @@ class App
         return self::$title;
     }
 
-    public static function setTitle($title)
+    public static function setTitle($title = "LES CHAMPS-IONS DU MEAUX-DE AVION")
     {
         self::$title = $title;
     }
