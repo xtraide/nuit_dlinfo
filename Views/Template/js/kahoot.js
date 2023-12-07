@@ -1,4 +1,4 @@
-const question = document.querySelector('.question');
-const reponse = document.querySelector('.reponse');
+import {verifier_reponse} from './function2.js';
 const valider = document.querySelector('.valider');
-const bonne_reponse = "Bonne reponse";
+
+valider.addEventListener('click', verifier_reponse);
