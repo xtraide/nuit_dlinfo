@@ -17,7 +17,7 @@ export function showScreen(id) {
     for (const [index, answer] of answers.entries()) {
       html += `<button class="answer" data-id="${index}">${answer}</button>`
     }
-  
+ 
     // Injecte le HTML dans la page
     const currentQuestion = document.querySelector('#current-question')
     currentQuestion.innerHTML = html
