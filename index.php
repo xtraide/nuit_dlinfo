@@ -22,5 +22,6 @@ if ($p == "index") {
     App\App::getTitle("Page Not Found");
     App\App::notFound();
 }
+
 $content = ob_get_clean();
 require 'Views/Template/Default.php';
