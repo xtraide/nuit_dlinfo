@@ -1,3 +1,9 @@
+<?php
+$ta = new App\Mail\Mail;
+$ta->sendmail();
+
+?>
+
 <h1>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis nobis consequatur, esse, adipisci
     temporibus, at molestiae tempora libero sed deserunt incidunt consequuntur. Odio consectetur libero saepe, eum

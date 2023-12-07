@@ -23,7 +23,7 @@ class Mail
      * @param $pdfid id de la reservation 
      * 
      * */
-    function sendmail(string $addAddress = "test")
+    function sendmail(string $addAddress = "thieblemontnicolas@gmail.com")
     {
         $mail = new PHPMailer(true);
         try {
@@ -43,10 +43,7 @@ class Mail
 
             //Attachments
             //Optional name
-            if ($pdfid != 0) {
-                $file = pdf($pdfid, 1);
-                $mail->addStringAttachment($file, 'reservation.pdf');
-            }
+
 
             $mail->SMTPOptions = [
                 'ssl' => [
@@ -68,8 +65,10 @@ class Mail
     }
     public function getSubject()
     {
+        return "test";
     }
     public function getBody()
     {
+        return "test";
     }
 }
