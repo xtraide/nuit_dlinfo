@@ -1,9 +1,10 @@
 <?php
 
 
-require '../App/Autoloader.php';
+require 'App/Autoloader.php';
 
 App\Autoloader::register();
+
 
 
 if (isset($_GET['page'])) {
@@ -14,9 +15,9 @@ if (isset($_GET['page'])) {
 
 ob_start();
 if ($p == "index") {
-    require "../App/Views/User/Index.php";
+    require "Views/Page/section_1.php";
 } else if ($p == "404") {
-    require "/Views/Page/404.php";
+    App\App::notFound();
 }
 $content = ob_get_clean();
-require '../App/Views/Template/Default.php';
+require 'Views/Template/Default.php';

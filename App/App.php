@@ -50,7 +50,7 @@ class App
     public static function notFound()
     {
         header('HTTP/1.1 404 Not Found');
-        header('location: App/Views/User/404.php');
+        header('location: /Views/User/404.php');
     }
 
     public static function getTitle()
