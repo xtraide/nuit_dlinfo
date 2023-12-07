@@ -7,3 +7,16 @@ function defi_theme() {
 
     document.body.classList.toggle("second");
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const pointerZone = document.getElementById('pointer-zone');
+
+  document.addEventListener('mousemove', function (e) {
+    const x = (e.clientX - 200);
+    const y = (e.clientY - 200);
+
+    pointerZone.style.left = `${x}px`;
+    pointerZone.style.top = `${y}px`;
+  });
+});
