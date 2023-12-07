@@ -16,6 +16,7 @@ if (isset($_GET['page'])) {
 ob_start();
 if ($p == "index") {
     require "Views/Page/section_1.php";
+    require "Views/Page/section_2.php";
 } else if ($p == "404") {
     App\App::notFound();
 }
