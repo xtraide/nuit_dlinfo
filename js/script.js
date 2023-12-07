@@ -1,7 +1,7 @@
 /* 
-    fonction pour switch des css 
+    fonction pour switch des css (defi theme n°392)
 */
-function switchCss() {
+function defi_theme() {
     //togle une classe 
     document.body.classList.toggle("first");
 
