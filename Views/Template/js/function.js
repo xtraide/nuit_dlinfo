@@ -1,3 +1,4 @@
+
 export function showScreen(id) {
     const screens = document.querySelectorAll('body > section')
     // Masque tous les écrans
