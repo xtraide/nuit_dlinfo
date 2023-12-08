@@ -1,60 +1,84 @@
-import { setResult, showQuestion, showScore, showScreen } from './function.js'; 
+
+import { setResult, showQuestion, showScore, showScreen } from './function.js';
 
 const quizzState = {
-    score : 0,
-    currentQuestion : 0
-  }
-  
+  score: 0,
+  currentQuestion: 0,
+};
+
 const questions = [
+  {
+    question: 'Quel est le gaz à effet de serre le plus abondant responsable du réchauffement climatique?',
+    answers: ['Dioxyde de carbone (CO2)', 'Méthane (CH4)', "Protoxyde d'azote (N2O)", "Vapeur d'eau (H2O)", "Ozone (O3)"],
+    correctAnswerIndex: 0,
+  },
+  {
+      question: "Les vaches contribuent-elles au réchauffement climatique en émettant du gaz à effet de serre ?",
+      answers: [
+        "A) Vrai (ils pètent ça fait du méthane qui contribue au réchauffement climatique)",
+        'B) Faux',
+        "C) Seulement si elles portent des pulls en laine",
+        'D) Dépend de la météo dans la prairie',
+      ],
+      correctAnswerIndex: 0,
+    },
     {
-      question: 'Quel est le langage de programmation utilisé pour le développement web ?',
-      answers: ['Java', 'Python', 'JavaScript'],
+      question: "Au cours des dernières décennies, la température mondiale moyenne a augmenté d'environ combien de degrés Celsius en raison du réchauffement climatique d'origine humaine?",
+      answers: [
+        "0,5°C",
+        '1,5°C (vrai)',
+        "2,5°C",
+        '4,5°C',
+      ],
+      correctAnswerIndex: 1,
+    },
+    {
+      question: "Dans quelle décennie les scientifiques estiment-ils que les effets graves du réchauffement climatique pourraient être irréversibles si des mesures significatives ne sont pas prises ?",
+      answers: [
+        "A) Années 2030",
+        'B) Années 2040',
+        "C) Années 2050",
+        'D) Années 2060',
+      ],
       correctAnswerIndex: 2,
     },
     {
-        question: "Qu'est-ce que HTML et quelle est sa fonction principale dans le développement Web ?",
-        answers: [
-          "Choix 1",
-          'Choix 2',
-          "Choix 3",
-          'Choix 4',
-        ],
-        correctAnswerIndex: 3,
-      }
-   
-] 
+      question: "Parmi les options suivantes, quel moyen est généralement considéré comme l'un des plus efficaces pour atténuer le réchauffement climatique en réduisant les émissions de gaz à effet de serre?",
+      answers: [
+        "1) Utiliser des ampoules à faible consommation d'énergie",
+        '2) Planter des arbres massivement',
+        "3) Développer des énergies renouvelables comme l'éolien et le solaire (vrai)",
+        '4) Utiliser des transports publics au lieu de véhicules individuels',
+      ],
+      correctAnswerIndex: 2,
+    }
+];
 
-showScreen('quizz')
-showQuestion(questions[quizzState.currentQuestion])
-showScore(quizzState)
+showScreen('quizz');
+showQuestion(questions[quizzState.currentQuestion]);
 
-const quizzScreen = document.querySelector('#quizz')
+const quizzScreen = document.querySelector('#quizz');
 quizzScreen.onclick = (event) => {
-  // Permet de s'assurer qu'on clique bien sur un élément portant la classe CSS ".answer"
-  const buttonClicked = event.target
+  const buttonClicked = event.target;
   if (!buttonClicked.matches('.answer')) {
-    return
+    return;
   }
 
-  // Récupération de l'indice de la réponse sur laquelle on a cliqué
-  const answerIndex = Number(buttonClicked.dataset.id)
+  const answerIndex = Number(buttonClicked.dataset.id);
 
-  // Vérification si cet indice correspond à celui de la bonne réponse
   if (answerIndex === questions[quizzState.currentQuestion].correctAnswerIndex) {
-    quizzState.score++ // si oui, on augmente le score
+    quizzState.score++;
   }
 
-  // Puis, on incrémente l'index de la question en cours
   quizzState.currentQuestion++;
 
-  // Si on atteint la fin du quizz, on remplit l'écran de résultat et on l'affiche
   if (quizzState.currentQuestion === questions.length) {
-    setResult(quizzState)
-    showScreen('result')
+    setResult(quizzState);
+    showScreen('result');
+  } else {
+    showQuestion(questions[quizzState.currentQuestion]);
+
+    // Move showScore to this point to update the score after each question
+    showScore(quizzState);
   }
-  // Sinon, on passe simplement à la question suivante en mettant le score à jour
-  else {
-    showQuestion(questions[quizzState.currentQuestion])
-    showScore(quizzState)
-  }
-}
+};
