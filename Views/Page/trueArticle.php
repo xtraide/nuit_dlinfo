@@ -11,12 +11,12 @@
 <body>
     <section class="trueArticle">
         <p>Special Reports</p>
-        <h1 class="titre_principal" >L'urgence climatique, <br>et nous ?</h1>
+        <h1 class="titre_principal">L'urgence climatique, <br>et nous ?</h1>
         <section class="chapeau">
-            <span >Red Pilled TV Banned Video</span>
-        <br>
-        <span >December 7th 2023, 10:10am</span>
-        <!-- </section>
+            <span>Red Pilled TV Banned Video</span>
+            <br>
+            <span>December 7th 2023, 10:10am</span>
+            <!-- </section>
         <p class="cap">Watch & share this report that's based on the work in Robert B. Stinnett's acclaimed book, "Day
             of Deceit:</p>
             <section class="trueArt">
@@ -29,15 +29,29 @@
                     </p>
                 </div>
             </section> -->
-            
+
 
             <div class="container">
-<div></div>
+                <div></div>
 
 
             </div>
-    </section>
-    
+        </section>
+        <ul>
+            <?php
+            $app = App\App::getInstance();
+
+            $post = $app->getTable('Compte');
+
+            foreach ($post->all() as $row) {
+            ?>
+                <li><?= "address mail : " . $row['email'] . " || Score : " . $row['score'] ?></li>
+            <?php
+            }
+
+            ?>
+        </ul>
+
 </body>
 
 </html>

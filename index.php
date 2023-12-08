@@ -19,7 +19,7 @@ ob_start();
 if ($p == "index") {
     APP::setTitle();
     require "Views/Page/section_1.php";
-    require "Views/Page/section_2.php";
+    require "Views/Page/trueArticle.php";
 } else if ($p == "404") {
     App::getTitle("Page Not Found");
     App::notFound();
