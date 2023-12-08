@@ -1,11 +1,11 @@
 
-import { setResult, showQuestion, showScore, showScreen } from './function.js';
+import { setResult, showQuestion, showScreen } from './function.js';
 
 const quizzState = {
   score: 0,
   currentQuestion: 0,
 };
-
+let score = 0;
 const questions = [
   {
     question: 'Quel est le gaz à effet de serre le plus abondant responsable du réchauffement climatique?',
@@ -56,7 +56,6 @@ const questions = [
 
 showScreen('quizz');
 showQuestion(questions[quizzState.currentQuestion]);
-
 const quizzScreen = document.querySelector('#quizz');
 quizzScreen.onclick = (event) => {
   const buttonClicked = event.target;
@@ -64,7 +63,7 @@ quizzScreen.onclick = (event) => {
     return;
   }
 
-  const answerIndex = Number(buttonClicked.dataset.id);
+  let answerIndex = Number(buttonClicked.dataset.id);
 
   if (answerIndex === questions[quizzState.currentQuestion].correctAnswerIndex) {
     quizzState.score++;
@@ -79,6 +78,14 @@ quizzScreen.onclick = (event) => {
     showQuestion(questions[quizzState.currentQuestion]);
 
     // Move showScore to this point to update the score after each question
-    showScore(quizzState);
+    // showScore(quizzState);
   }
+
+  if (Number(buttonClicked.id) === questions[quizzState.currentQuestion].correctAnswerIndex) {
+    score = score + 1;
+    console.log(score);
+    const scorehtml = document.querySelector('#score')
+    scorehtml.innerHTML = score;
+  }
+  
 };

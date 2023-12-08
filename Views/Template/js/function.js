@@ -26,35 +26,33 @@ export function showScreen(id) {
     currentQuestion.innerHTML = html;
   }
   
-  export function showScore(quizzState) {
-    const score = document.querySelector('#score')
-    score.innerHTML = quizzState.score
-  }
+  // export function showScore(quizzState) {
+  //   const score = document.querySelector('#score')
+  //   score.innerHTML = score;
+  // }
   
   export function setResult(quizzState) {
-    const BEST_SCORE_POSSIBLE = quizzState.currentQuestion
+    const BEST_SCORE_POSSIBLE = quizzState.currentQuestion;
   
-    let message = null
+    let message = null;
   
     if (quizzState.score === BEST_SCORE_POSSIBLE) {
-      message = 'Un sans fautes ! Vous êtes un dieu de la culture numérique !'
-    }
-    else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.75) {
-      message = 'Bravo ! Vous êtes parmis les meilleurs des meilleurs !'
-    }
-    else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.5) {
-      message = 'Bon résultat, vous êtes au dessus de la moyenne !'
-    }
-    else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.25) {
-      message = 'Peu mieux faire, il vous reste encore quelques sujets à étudier. Courage !'
-    }
-    else {
-      message = 'Pas glop ! Vous devriez revoir votre culture numérique et réessayer ce Quizz'
+      message = 'Un sans fautes ! Vous êtes un dieu de la culture numérique !';
+    } else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.75) {
+      message = 'Bravo ! Vous êtes parmi les meilleurs des meilleurs !';
+    } else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.5) {
+      message = 'Bon résultat, vous êtes au-dessus de la moyenne !';
+    } else if (quizzState.score >= BEST_SCORE_POSSIBLE * 0.25) {
+      message = 'Peu mieux faire, il vous reste encore quelques sujets à étudier. Courage !';
+    } else {
+      message = 'Pas glop ! Vous devriez revoir votre culture numérique et réessayer ce Quizz';
     }
   
-    const appreciation = document.querySelector('#appreciation')
-    appreciation.innerHTML = message
+    const appreciation = document.querySelector('#quizz');
+    appreciation.innerHTML = "bravo votre score est: " + quizzState.score;
+    console.log(message);
   
-    const scoreFinal = document.querySelector('#score-final')
-    scoreFinal.innerHTML = quizzState.score
+    const scoreFinal = document.querySelector('#score-final');
+    scoreFinal.innerHTML = quizzState.score;
   }
+  

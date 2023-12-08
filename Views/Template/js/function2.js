@@ -40,9 +40,9 @@ export function verifier_reponse() {
     const reponse = document.querySelector('.reponse');
     const reponse_affiche = document.querySelector(".reponse_affiche");
     let bonne_reponse = "2050";
-    let number = 0;
 
     if (reponse.value === bonne_reponse) {
+        number = number+1;
         console.log("Bonne réponse");
         reponse_affiche.innerHTML = "<p> Bonne réponse! <br>Votre réponse:" + reponse.value + "</p>"  + "<button class='suivant_un'>suivant";
     } else {
@@ -77,6 +77,7 @@ export function deuxième_question_suivant () {
         bouton_deux.addEventListener('click', function () {
             console.log('toto')
               if (this.value === bonne_reponse) {
+                number = number+1;
             console.log("Bonne réponse");
             reponse_affiche2.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + this.value + "</p>"  + "<button class='suivant_deux'>suivant"; 
             document.querySelector('.suivant_deux').addEventListener('click', function () {
@@ -110,6 +111,7 @@ export function deuxième_question_suivant () {
         bouton_trois.addEventListener('click', function () {
             console.log('toto')
               if (this.value === bonne_reponse) {
+                number = number+1;
             console.log("Bonne réponse");
             reponse_affiche2.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + this.value + "</p>"  + "<button class='suivant_trois'>suivant"; 
             document.querySelector('.suivant_trois').addEventListener('click', function () {
@@ -142,6 +144,7 @@ function quatre () {
         bouton_quatre.addEventListener('click', function () {
             console.log('toto')
               if (this.value === bonne_reponse) {
+                number = number+1;
             console.log("Bonne réponse");
             reponse_affiche4.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + this.value + "</p>"  + "<button class='suivant_quatre'>suivant"; 
             document.querySelector('.suivant_quatre').addEventListener('click', function () {
@@ -174,6 +177,7 @@ function cinq () {
         bouton_cinq.addEventListener('click', function () {
             console.log('toto')
               if (this.value === bonne_reponse) {
+                number = number+1;
             console.log("Bonne réponse");
             reponse_affiche5.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + this.value + "</p>"  + "<button class='suivant_cinq'>suivant"; 
             document.querySelector('.suivant_cinq').addEventListener('click', function () {
@@ -195,4 +199,5 @@ function cinq () {
 function six () {
     document.querySelector(".five").style.display = "none";
     document.querySelector(".gagne").style.display = "block";
+    document.querySelector(".gagne").innerHTML = "votre score est:" + number;
 }
