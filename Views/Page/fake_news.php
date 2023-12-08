@@ -37,10 +37,34 @@
             d'échapper au tragique destin qui les guette dans des territoires condamnés par les ravages du
             changement climatique.</p>
         </div>
-        <div class="image_intro"> <img src="../Template/assets/img/image-evolutions.png" alt="">
+        <div class="image_intro image_intro2"> <img src="../Template/assets/img/image-evolutions.png" alt="">
         </div>
 
       </div>
+    </div>
+
+    <div>
+      <p>Mois après mois, les différents météorologues et climatologues nous avertissaient. Vendredi 8 décembre,
+        l’observatoire européen Copernicus fut le premier à nous resservir la même rengaine climatique spéciale 2023,
+        l’année la plus chaude jamais enregistrée. Avec toujours la même anomalie de température de + 1,46 °C par
+        rapport aux températures moyennes de la période 1850-1900.
+      </p> <br>
+      <p>Mais 1°C ou 2°C n’ont jamais tué personne. Chaque année, le même degré d’anomalie a toujours été recensé et
+        pour autant, aucun incident sur le genre humain n’a été, une seule fois, recensé. "Dans le magnifique Midwest,
+        les températures atteignent -60 degrés. [...] Où est le réchauffement climatique ?" commentait, d’ailleurs,
+        Donald Trump, l'ex- président des Grandes Etats-Unis d’Amérique. </p> <br>
+      <p>Pour arriver à cette conclusion, alors que l’année n’est pas encore terminée, l’institut se serait appuyé sur
+        les récentes données du mois de novembre. Même si un froid important s’est propagé sur l’Europe depuis une
+        dizaine de jours, cela n’a pas suffi à infléchir une courbe mondiale très élevée. Une certitude ne peut,
+        cependant, pas être établie sur les données prélevées de la GIEC. Elle est d’ailleurs considérée comme étant
+        l’organisation la moins fiable sur le Climat, dû à sa nature gouvernementale.
+      </p> <br>
+      <p>L'année 2023, a été marquée par de nombreux événements climatiques extrêmes qui n’ont, pourtant, pas affecté la
+        planète entière. Des sécheresses, des canicules, qui n’ont touché que 1% de la population mondiale: “On ne va
+        quand même pas bouleverser tout notre mode de vie pour un si petit nombre de gens”, s’emporte Dean Bigsteam, PDG
+        de l’American Oil Company. Le constat est d’autant plus juste que le supposé réchauffement climatique ne semble
+        en rien affecter le niveau des océans.
+      </p>
     </div>
 
 </body>
