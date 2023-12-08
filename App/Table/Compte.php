@@ -17,13 +17,20 @@ class Compte
             self::$table = strtolower(end($class_name));
         }
     }
-    public  function getScore($score)
+    public  function getScore()
     {
-        return self::$database->prepare("SELECT score FROM" . self::$table . " WHERE id = :id", [":id" => $score]);
+        return self::$database->prepare("SELECT score FROM " . self::$table);
     }
+    /*
+    <?php
+$app = App\App::getInstance();
+
+$post = $app->getTable('Compte');
+var_dump($post->all()); ?>
+ */
     public  function all()
     {
-        var_dump(self::$database);
-        return self::$database->query("SELECT * FROM  " . self::$table,  get_called_class());
+
+        return self::$database->query("SELECT * FROM  " . self::$table);
     }
 }

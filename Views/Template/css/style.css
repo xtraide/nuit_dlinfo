@@ -17,16 +17,19 @@ exs
 }
 :root {
     --bg-principale: #FAF0D4;
-    --color-principale: #00A65F; 
+    --color-principale: #00A65F;
 
   }
+*{
+    margin: 0;
+    padding: 0;
 
+}
 body{
     background-color: #FAF0D4;
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .fakeArticle{
     width: 100%;
     position: relative;
@@ -34,15 +37,17 @@ body{
 
 
 }
-.fakeArticle h1{
+
+.fakeArticle h1 {
     font-size: 4.375rem;
-    margin-top: 30%;  
+    margin-top: 30%;
     font-weight: 100;
     width: 80%;
     margin: auto;
     color: #00A65F;
 }
-.fakeArticle p{
+
+.fakeArticle p {
     width: 30%;
     margin: auto;
     margin-top: 15px;
@@ -50,7 +55,8 @@ body{
     font-weight: 100;
 
 }
-.cap{
+
+.cap {
     font-size: 0.063rem;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -61,45 +67,28 @@ body{
 }
 
 /*CSS du vrai article*/
-
-.special{
-    display: flex;
-    align-items: center;
+/* .trueArticle{
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+} */
+.trueArticle h1{
+    font-size: 2rem;
+    color: #00A65F;
 }
 
-.special p{
-    margin-right:10px;
-    color: var(--color-principale);
-}
-
-.hr{
-    border: #000000 solid 1px;
-    flex: 1;
-    /* transform: translate(-90deg); */
-}
-
-.chapeau p{
-    margin-bottom: 0;
-    margin-top: 0;
-
-}
-
-.titre_principal{
+.titre_principal {
     text-transform: uppercase;
     color: var(--color-principale);
     font-size: 3rem;
     margin-bottom: 50px;
 }
-
-.petite_intro{
-    font-size: 1.2rem;
+.paragraphe{
+    text-justify: auto;
 }
-
-
-.image_intro img{
-    width: 100%;
-    object-fit: cover;
+.chapeau{
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 /* .container_intro{
@@ -107,7 +96,102 @@ body{
 
 
 
+.flocon {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 100%;
+}
 
+.anim1 {
+    width: 6px;
+    height: 6px;
+    animation: roulemapoule1 5s linear infinite;
+}
+
+.anim2 {
+    width: 3px;
+    height: 3px;
+    background: #cccccc;
+    animation: roulemapoule2 5s linear infinite;
+}
+
+.anim3 {
+    background: #eeeeee;
+    width: 4px;
+    height: 4px;
+    animation: roulemapoule3 5s ease infinite;
+}
+
+@keyframes roulemapoule1 {
+    0% {
+        top: -4px;
+    }
+
+    30% {
+        transform: translate(10px, 0);
+    }
+
+    60% {
+        transform: translate(20px, 0);
+    }
+
+    100% {
+        top: calc(100% - 4px);
+        transform: translate(5px, 0);
+    }
+}
+
+@keyframes roulemapoule2 {
+    0% {
+        top: -4px;
+    }
+
+    20% {
+        transform: translate(30px, 0);
+    }
+
+    40% {
+        transform: translate(0px, 0);
+    }
+
+    60% {
+        transform: translate(0px, 0);
+    }
+
+    100% {
+        top: calc(100% - 4px);
+        transform: translate(30px, 0);
+    }
+}
+
+@keyframes roulemapoule3 {
+    0% {
+        top: -4px;
+    }
+
+    10% {
+        transform: translate(10px, 0);
+    }
+
+    20% {
+        transform: translate(20px, 0);
+    }
+
+    50% {
+        transform: translate(0px, 0);
+    }
+
+    70% {
+        transform: translate(10px, 0);
+    }
+
+    100% {
+        top: calc(100% - 4px);
+        transform: translate(20px, 0);
+    }
+}
 
 
 /* fake news*/
@@ -116,18 +200,18 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-  }
-  
+}
+
 #div2 {
     position: absolute;
     left: 0;
     z-index: 3;
-  }
-  
-  
+}
 
-  /* cercle autour du pointer*/
-  #pointer-zone {
+
+
+/* cercle autour du pointer*/
+#pointer-zone {
     position: absolute;
     background-color: #ff0000;
     width: 400px;
@@ -135,4 +219,5 @@ body{
     z-index: 2;
     border-radius: 50%;
     overflow: hidden;
-  }
+    overflow: hidden;
+}
