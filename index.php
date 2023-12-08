@@ -1,9 +1,10 @@
 <?php
 
+use App\App;
 
 require 'App/Autoloader.php';
 
-App\Autoloader::register();
+\App\Autoloader::register();
 
 
 
@@ -13,14 +14,15 @@ if (isset($_GET['page'])) {
     $p = "index";
 }
 
+
 ob_start();
 if ($p == "index") {
-    App\APP::setTitle();
+    APP::setTitle();
     require "Views/Page/section_1.php";
-    require "Views/Page/section_2.php";
+    require "Views/Page/trueArticle.php";
 } else if ($p == "404") {
-    App\App::getTitle("Page Not Found");
-    App\App::notFound();
+    App::getTitle("Page Not Found");
+    App::notFound();
 }
 
 $content = ob_get_clean();

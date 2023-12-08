@@ -16,7 +16,7 @@ export function showScreen(id) {
     // Création du HTML de la question
     let html = `<p>${question}</p>`;
     for (const [index, answer] of answers.entries()) {
-      html += `<button class="answer" data-id="${index}">${answer}</button>`
+      html += `<div class="answer" id="${index}">${answer}</div>`
     }
  
     // Injecte le HTML dans la page
