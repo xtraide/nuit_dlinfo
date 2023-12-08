@@ -41,6 +41,16 @@ const questions = [
         ],
         correctAnswerIndex: 2,
       },
+      {
+        question: "bla ?",
+        answers: [
+          "bbla.",
+          'bbl.',
+          "bb.",
+          'Hbb.',
+        ],
+        correctAnswerIndex: 1  ,
+      },
    
 ] 
 
