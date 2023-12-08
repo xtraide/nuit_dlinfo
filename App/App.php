@@ -7,10 +7,10 @@ use App\Database;
 class App
 {
     private static $instance;
-    private static $database;
-    private static $title = "SAE 303";
+    private  $database;
+    private static $title;
 
-    public function getInstance()
+    public static function getInstance()
     {
         if (!self::$instance) {
             self::$instance = new App();
@@ -24,27 +24,28 @@ class App
     $c = App::getInstance();
     $c->getTable('table');
     */
-    public  function getTable($name)
+    public function getTable($name)
     {
         $class_name = '\\App\\Table\\' . ucfirst($name);
-        return new  $class_name(self::getDatabase());
+        return new $class_name($this->getDatabase());
     }
 
 
 
-    public static function getDatabase()
+    public  function getDatabase()
     {
-        if (!self::$database) {
-            $config = Config::getInstance();
+        $config = Config::getInstance();
+        if (!$this->database) {
 
-            return new Database(
-                $config->get('db_name'),
-                $config->get('db_user'),
-                $config->get('db_pass'),
-                $config->get('db_host')
+            $this->database = new Database(
+                $config->get('DB_NAME'),
+                $config->get('DB_USER'),
+                $config->get('DB_PASS'),
+                $config->get('DB_HOST')
             );
         }
-        return self::$database;
+
+        return $this->database;
     }
 
     public static function notFound()

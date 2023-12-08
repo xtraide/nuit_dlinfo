@@ -31,7 +31,7 @@ body{
 
 }
 .fakeArticle h1{
-    font-size: 70px;
+    font-size: 4.375rem;
     margin-top: 30%;  
     font-weight: 100;
     width: 80%;
@@ -47,7 +47,7 @@ body{
 
 }
 .cap{
-    font-size: 11px;
+    font-size: 0.063rem;
     padding-top: 7px;
     padding-bottom: 7px;
     /*width: 80%;*/
@@ -57,16 +57,18 @@ body{
 }
 
 /*CSS du vrai article*/
-.trueArticle{
-    /*width: 100%;*/
+/* .trueArticle{
     margin-top: 40px;
     margin-left: 70px;
     margin-right: 70px;
-}
+} */
 .trueArticle h1{
-    font-size: 30pt;
+    font-size: 2rem;
     color: #00A65F;
-    
+}
+
+.titre_principal{
+    text-transform: uppercase;
 }
 .trueArt{
     display: flex;

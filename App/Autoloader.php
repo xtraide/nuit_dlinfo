@@ -8,7 +8,6 @@ class Autoloader
 
     static public function register()
     {
-
         spl_autoload_register(array(__CLASS__, 'autoload'));
     }
     static function autoload($class)

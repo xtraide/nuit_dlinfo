@@ -33,6 +33,7 @@ class Config
         if (!array_key_exists($key, $this->config)) {
             return null;
         }
+        echo "";
         return $this->config[$key];
     }
 }

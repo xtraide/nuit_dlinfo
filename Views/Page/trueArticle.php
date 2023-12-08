@@ -10,16 +10,13 @@
 
 <body>
     <section class="trueArticle">
-        <h2>Special Reports</h2>
-        <h1>L'AGROÉCOLOGIE, AU COEUR DE NOTRE ACTION</h1>
+        <p>Special Reports</p>
+        <h1 class="titre_principal" >L'urgence climatique, <br>et nous ?</h1>
         <section class="chapeau">
             <span >Red Pilled TV Banned Video</span>
         <br>
         <span >December 7th 2023, 10:10am</span>
-        </section>
-        
-       
-        
+        <!-- </section>
         <p class="cap">Watch & share this report that's based on the work in Robert B. Stinnett's acclaimed book, "Day
             of Deceit:</p>
             <section class="trueArt">
@@ -31,8 +28,14 @@
                         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                 </div>
-            </section>
+            </section> -->
             
+
+            <div class="container">
+<div></div>
+
+
+            </div>
     </section>
     
 </body>

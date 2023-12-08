@@ -6,7 +6,7 @@
     const DB_HOST = "localhost";
 */
 return array(
-    'DB_NAME' => 'ntrhndmam_acf2l',
+    'DB_NAME' => 'nuit_info',
     'DB_USER' => 'root',
     'DB_PASS' => '',
     'DB_HOST' => 'localhost'
