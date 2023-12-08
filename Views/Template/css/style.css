@@ -26,47 +26,20 @@ body {
     background-color: #FAF0D4;
     padding-left: 30px;
     padding-right: 30px;
+    font-family: 'Inter', sans-serif;
 }
 
-.fake_body{
+.fake_div {
     color: black;
     background-color: white;
 }
 
-.fakeArticle {
-    width: 100%;
-    position: relative;
-    margin-top: 10%;
-
-
+.contenu_1 {
+    margin-top: 30px;
 }
 
-.fakeArticle h1 {
-    font-size: 4.375rem;
-    margin-top: 30%;
-    font-weight: 100;
-    width: 80%;
-    margin: auto;
-    color: #00A65F;
-}
-
-.fakeArticle p {
-    width: 30%;
-    margin: auto;
-    margin-top: 15px;
-    margin-left: 10%;
-    font-weight: 100;
-
-}
-
-.cap {
-    font-size: 0.063rem;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    /*width: 80%;*/
-    margin: auto;
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
+.image_intro img{
+    margin-bottom: 20px;
 }
 
 /*CSS du vrai article*/
@@ -77,7 +50,7 @@ body {
 
 }
 
-.special2{
+.special2 {
     color: black;
 }
 
@@ -87,7 +60,7 @@ body {
     margin-left: 10px;
 }
 
-.hr2{
+.hr2 {
     border: black dashed 1px;
 }
 
@@ -99,7 +72,7 @@ body {
     margin-top: 0;
 }
 
-.titre_principal2{
+.titre_principal2 {
     color: black;
 }
 
@@ -119,10 +92,11 @@ body {
 
 .image_intro img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     margin-top: 20px;
+    height: 600px;
+    
 }
-
 
 
 .flocon {
@@ -252,7 +226,7 @@ body {
 }
 
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:901px) {
     body {
         padding: 50px;
     }
@@ -266,35 +240,35 @@ body {
         font-size: 4.5rem;
     }
 
-    .container_intro{
+    .container_intro {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .text_intro {
         width: 40%;
     }
 
-    .text_intro p{
+    .text_intro p {
         border: black 1px solid;
-        padding:50px;
+        padding: 50px;
         font-size: 1.4rem;
     }
 
-    .chapeau p{
+    .chapeau p {
         font-size: 1.4rem;
     }
 
-    .special p{
-        font-size: 1.4rem;
+    .special p {
         color: var(--color-principale);
     }
 
-    .image_intro{
-        width: 700px;
+    .image_intro {
+        width: 600px;
     }
 
-    .container_intro{
+    .container_intro {
         border-bottom: dashed 3px black;
     }
 
