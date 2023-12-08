@@ -37,7 +37,7 @@
                     changement climatique.</p>
                 </div>
                 <div class="image_intro"><img
-                        src="https://i.pinimg.com/564x/3d/ff/60/3dff60aee53e7fe314d2d2d40a24def1.jpg" alt=""></div>
+                        src="../images-nuit-info/usine.png" alt=""></div>
 
             </div>
         </section>
