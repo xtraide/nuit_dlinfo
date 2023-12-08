@@ -1,17 +1,6 @@
 <div id="div1">
   <!-- article fake-->
-  <p id="switch" onclick="switch1()">text qui doit disparaitre qd il est sur du rouge</p>
-  <p id="none" style="display: none;" onclick="switch1()">text qui doit disparaitre qd il est sur du verty</p>
-</div>
-<div id="pointer-zone" style="display: none;">
-  <!-- vrai article-->
-  <div class="article" id="div2">phrase qui doit aparaitre qd c rouge</div>
-</div>
-
-<link rel="stylesheet" href="../Template/css/style.css">
-
-<body class="fake_body">
-  <div class="special special2">
+  <div class="special special2 fake_div">
     <p>Article 2</p>
     <div class="hr"></div>
   </div>
@@ -67,4 +56,12 @@
       </p>
     </div>
 
-</body>
+  <p id="switch" onclick="switch1()">text qui doit disparaitre qd il est sur du rouge</p>
+  <p id="none" style="display: none;" onclick="switch1()">text qui doit disparaitre qd il est sur du verty</p>
+</div>
+<div id="pointer-zone" style="display: none;">
+  <!-- vrai article-->
+  <div class="article" id="div2">phrase qui doit aparaitre qd c rouge</div>
+</div>
+
+<link rel="stylesheet" href="../Template/css/style.css">
