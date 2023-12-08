@@ -1,7 +1,39 @@
+function animateCountdown(startValue, endValue) {
+    let question = document.querySelector('.question');
+    let reponse = document.querySelector('.reponse');
+    let bonne_reponse = "2013";
+    let reponse_affiche = document.querySelector(".reponse_affiche");
+    let number = 0;
+    // Convertir les valeurs en nombres
+    let startNumber = parseInt(startValue, 10);
+    let endNumber = parseInt(endValue, 10);
+
+    // Vérifier si les valeurs sont des nombres valides
+    if (!isNaN(startNumber) && !isNaN(endNumber)) {
+        // Déterminer le pas d'animation en fonction de la différence entre les deux valeurs
+        let step = (startNumber > endNumber) ? -1 : 1;
+        
+        // Démarrer l'animation avec une certaine intervalle
+        let interval = setInterval(function() {
+            // Mettre à jour la valeur du champ de texte
+            reponse.value = startNumber;
+
+            // Mettre à jour la valeur affichée
+            reponse_affiche.innerHTML = "<p> Mauvaise réponse2!! <br> Votre réponse:" + reponse.value + "<br> la bonne réponse était:"+ bonne_reponse +"</p>" + "<button class='suivant_un'>suivant</button>";
+
+            // Passer à la prochaine valeur
+            startNumber += step;
+
+            // Arrêter l'animation lorsque la valeur atteint la bonne réponse
+            if ((step === 1 && startNumber > endNumber) || (step === -1 && startNumber < endNumber)) {
+                clearInterval(interval);
+            }deuxième_question ()
+        }, 50); deuxième_question ()// Interval en millisecondes
+    }}
 export function verifier_reponse() {
     const question = document.querySelector('.question');
     const reponse = document.querySelector('.reponse');
-    let bonne_reponse = "Bonne reponse";
+    let bonne_reponse = "2013";
     const reponse_affiche = document.querySelector(".reponse_affiche");
     let number = 0;
 
@@ -11,6 +43,7 @@ export function verifier_reponse() {
     } else {
         console.log("Essaie encore");
         reponse_affiche.innerHTML = "<p> Mauvaise réponse!! <br> Votre réponse:" + reponse.value + "<br> la bonne réponse était:"+ bonne_reponse +"</p>" + "<button class='suivant_un'>suivant"
+        animateCountdown(reponse.value, bonne_reponse);
     }
     deuxième_question ()
 }
