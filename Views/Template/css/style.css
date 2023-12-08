@@ -28,6 +28,11 @@ body {
     padding-right: 30px;
 }
 
+.fake_body{
+    color: black;
+    background-color: white;
+}
+
 .fakeArticle {
     width: 100%;
     position: relative;
@@ -72,11 +77,18 @@ body {
 
 }
 
+.special2{
+    color: black;
+}
+
 .hr {
     border: black 1px solid;
     flex: 1;
     margin-left: 10px;
+}
 
+.hr2{
+    border: black dashed 1px;
 }
 
 .titre_principal {
@@ -85,6 +97,10 @@ body {
     font-size: 3rem;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.titre_principal2{
+    color: black;
 }
 
 .titre_principal_desk {
@@ -260,8 +276,7 @@ body {
     }
 
     .text_intro p{
-        border-top: 1px solid black;
-        border-right: black 1px solid;
+        border: black 1px solid;
         padding:50px;
         font-size: 1.4rem;
     }
