@@ -4,7 +4,8 @@
         <div class="hr"></div>
     </div>
 
-    <h1 class="titre_principal">L'urgence climatique, <br>et nous ?</h1>
+    <h1 class="titre_principal titre_principal_mobile">L'urgence climatique, <br>et nous ?</h1>
+    <h1 class="titre_principal titre_principal_desk">L'urgence climatique, et nous ?</h1>
     <section class="chapeau"><br>
         <p>Les champs'ions du meaux'de avion</p>
         <p>08 Décembre 2023, 8h</p> <br>
@@ -24,9 +25,7 @@
                         d'échapper au tragique destin qui les guette dans des territoires condamnés par les ravages du
                         changement climatique.</p>
                 </div>
-                <div class="image_intro">
-                    <img src="https://i.pinimg.com/564x/3d/ff/60/3dff60aee53e7fe314d2d2d40a24def1.jpg" alt="">
-                </div>
+                <div class="image_intro"><img src="../Template/assets/img/usine.png" alt=""></div>
 
             </div>
     </section>

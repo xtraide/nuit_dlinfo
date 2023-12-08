@@ -14,43 +14,13 @@ const questions = [
     {
         question: "Qu'est-ce que HTML et quelle est sa fonction principale dans le développement Web ?",
         answers: [
-          "HTML est un langage de balisage utilisé pour structurer le contenu d'un site Web.",
-          'HTML est un langage de programmation utilisé pour créer des applications Web.',
-          "HTML est un langage de balisage utilisé pour structurer le contenu d'un site Web.",
-          'HTML est un langage de programmation utilisé pour créer des applications Web.',
+          "Choix 1",
+          'Choix 2',
+          "Choix 3",
+          'Choix 4',
         ],
         correctAnswerIndex: 3,
-      },
-      {
-        question: "blbla ?",
-        answers: [
-          "bbla.",
-          'bbl.',
-          "bkbkkb.",
-          'Hblblb.',
-        ],
-        correctAnswerIndex: 3,
-      },
-      {
-        question: "bla ?",
-        answers: [
-          "bbla.",
-          'bbl.',
-          "bb.",
-          'Hbb.',
-        ],
-        correctAnswerIndex: 2,
-      },
-      {
-        question: "bla ?",
-        answers: [
-          "bbla.",
-          'bbl.',
-          "bb.",
-          'Hbb.',
-        ],
-        correctAnswerIndex: 1  ,
-      },
+      }
    
 ] 
 
