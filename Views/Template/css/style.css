@@ -26,6 +26,7 @@ body {
     background-color: #FAF0D4;
     padding-left: 30px;
     padding-right: 30px;
+    font-family: 'Inter', sans-serif;
 }
 
 .fake_div {
@@ -91,10 +92,11 @@ body {
 
 .image_intro img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     margin-top: 20px;
+    height: 600px;
+    
 }
-
 
 
 .flocon {
@@ -224,7 +226,7 @@ body {
 }
 
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:901px) {
     body {
         padding: 50px;
     }
@@ -241,6 +243,7 @@ body {
     .container_intro {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .text_intro {
@@ -258,12 +261,11 @@ body {
     }
 
     .special p {
-        font-size: 1.4rem;
         color: var(--color-principale);
     }
 
     .image_intro {
-        width: 700px;
+        width: 600px;
     }
 
     .container_intro {
