@@ -10,6 +10,76 @@ pour le deuxieme
 exs
 .first div li .lia{ color: #;} 
 */
+:root {
+    --bg-principale: #FAF0D4;
+    --color-principale: #00A65F; 
+
+  }
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #FAF0D4;
+}
+.fakeArticle{
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+
+
+}
+.fakeArticle h1{
+    font-size: 70px;
+    margin-top: 30%;  
+    font-weight: 100;
+    width: 80%;
+    margin: auto;
+    color: #00A65F;
+}
+.fakeArticle p{
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 10%;
+    font-weight: 100;
+
+}
+.cap{
+    font-size: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*width: 80%;*/
+    margin: auto;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+/*CSS du vrai article*/
+.trueArticle{
+    /*width: 100%;*/
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.trueArticle h1{
+    font-size: 30pt;
+    color: #00A65F;
+    
+}
+.trueArt{
+    display: flex;
+    margin-top: 30px;
+}
+.paragraphe{
+    text-justify: auto;
+}
+.chapeau{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -21,7 +91,7 @@ exs
     overflow: hidden;
   }
   
-  #div2 {
+#div2 {
     position: absolute;
     left: 0;
     z-index: 3;
