@@ -10,7 +10,6 @@
 
 <body>
     <section class="trueArticle">
-<<<<<<< HEAD
         <div class="special" >
         <p>Article 2</p>
         <div class="hr"></div>
@@ -20,14 +19,6 @@
         <section class="chapeau"><br>
             <p>Les champs'ions du meaux'de avion</p>
             <p>08 Décembre 2023, 8h</p> <br>
-=======
-        <p>Special Reports</p>
-        <h1 class="titre_principal">L'urgence climatique, <br>et nous ?</h1>
-        <section class="chapeau">
-            <span>Red Pilled TV Banned Video</span>
-            <br>
-            <span>December 7th 2023, 10:10am</span>
->>>>>>> 995f69d8d2830f942385218d0ff12959f3ca0c9a
             <!-- </section>
         <p class="cap">Watch & share this report that's based on the work in Robert B. Stinnett's acclaimed book, "Day
             of Deceit:</p>
@@ -41,14 +32,10 @@
                     </p>
                 </div>
             </section> -->
-<<<<<<< HEAD
-
-=======
 
 
             <div class="container">
                 <div></div>
->>>>>>> 995f69d8d2830f942385218d0ff12959f3ca0c9a
 
             <div class="container_intro">
                 <div class="text_intro">
@@ -67,8 +54,6 @@
             </div>
         </section>
 
-<<<<<<< HEAD
-=======
         <ul>
             <?php
             $app = App\App::getInstance();
@@ -84,7 +69,6 @@
             ?>
         </ul>
 
->>>>>>> 995f69d8d2830f942385218d0ff12959f3ca0c9a
 </body>
 
 </html>
