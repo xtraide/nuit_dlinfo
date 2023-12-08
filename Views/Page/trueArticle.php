@@ -37,7 +37,7 @@
                     changement climatique.</p>
                 </div>
                 <div class="image_intro"><img
-                        src="./Views/Template/assets/img/usine.png" alt=""></div>
+                        src="../Template/assets/img/usine.png" alt=""></div>
 
             </div>
         </section>

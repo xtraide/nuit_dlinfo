@@ -256,7 +256,7 @@ body {
     }
 
     .text_intro {
-        width: 50%;
+        width: 40%;
     }
 
     .text_intro p{
@@ -273,6 +273,14 @@ body {
     .special p{
         font-size: 1.4rem;
         color: var(--color-principale);
+    }
+
+    .image_intro{
+        width: 700px;
+    }
+
+    .container_intro{
+        border-bottom: dashed 3px black;
     }
 
 
