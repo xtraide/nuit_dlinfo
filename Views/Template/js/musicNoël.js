@@ -9,5 +9,6 @@ function play() {
         audio.pause();
         MusicIsPlay = false;
     }
+    console.log(MusicIsPlay);
 }
 
