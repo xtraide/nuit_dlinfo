@@ -31,18 +31,23 @@ class Database
         return $this->pdo;
     }
 
-    public  function query($sql, $class_name)
+    public  function query($sql, $class_name = null)
     {
         $req = $this->connect()->query($sql);
-        $data = $req->fetchAll(PDO::FETCH_CLASS, $class_name);
+        $data = $req->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
 
-    public function prepare($sql, $params = [], $class_name)
+    public function prepare($sql, $params = [], $class_name = null)
     {
         $req = $this->connect()->prepare($sql);
         $req->execute($params) or die($this->connect()->errorInfo());
-        $data = $req->fetchAll(PDO::FETCH_CLASS, $class_name);
+        if ($class_name != null) {
+            $data = $req->fetchAll(PDO::FETCH_CLASS, $class_name);
+        } else {
+            $data = $req->fetchAll(PDO::FETCH_ASSOC);
+        }
+
         return $data;
     }
 }

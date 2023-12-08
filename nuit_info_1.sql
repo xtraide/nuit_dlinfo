@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 07 déc. 2023 à 20:03
+-- Généré le : ven. 08 déc. 2023 à 00:16
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `compte`;
 CREATE TABLE IF NOT EXISTS `compte` (
-  `id` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `email` varchar(50) DEFAULT NULL,
   `mdp` varchar(100) NOT NULL,
   `score` varchar(50) DEFAULT NULL,
