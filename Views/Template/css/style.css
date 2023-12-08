@@ -198,31 +198,34 @@ body {
 
 
 /* fake news*/
-#div1 {
-
+#div1 { 
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1000;
 }
 
 #div2 {
     position: absolute;
-    left: 0;
+    left: 50px;
     z-index: 3;
+    padding: 50px;
 }
 
+.fixed{
 
+  }
 
 /* cercle autour du pointer*/
 #pointer-zone {
     position: absolute;
     background-color: #ff0000;
-    width: 400px;
+    width: 100%;
     height: 400px;
     z-index: 2;
-    border-radius: 50%;
     overflow: hidden;
-    overflow: hidden;
+    padding: 50px;
+    
 }
 
 
@@ -272,5 +275,10 @@ body {
         border-bottom: dashed 3px black;
     }
 
+
+}
+
+#page{
+    width: 100%;
 
 }

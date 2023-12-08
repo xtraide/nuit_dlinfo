@@ -12,8 +12,7 @@
     <p>Les champs'ions du meaux'de avion</p>
     <p>08 Décembre 2023, 8h</p> <br>
     <div class="hr hr2"></div>
-</div>
-<div class="container">
+    <div class="container">
 
   <div class="container_intro">
     <div class="text_intro">
@@ -77,8 +76,13 @@
 <p id="switch" onclick="switch1()">text qui doit disparaitre qd il est sur du rouge</p>
 <p id="none" style="display: none;" onclick="switch1()">text qui doit disparaitre qd il est sur du verty</p>
 </div>
-<div id="pointer-zone" style="display: none;">
+</div>
+
+<div id="pointer-zone" >
+  <div id="page">
+<div id="div2">
   <!-- vrai article-->
+  <div class="fixed">
   <div class="special special2 fake_div">
     <p>Article 2</p>
     <div class="hr"></div>
@@ -91,7 +95,7 @@
     <p>Les champs'ions du meaux'de avion</p>
     <p>08 Décembre 2023, 8h</p> <br>
     <div class="hr hr2"></div>
-</div>
+
 <div class="container">
 
   <div class="container_intro">
@@ -140,5 +144,8 @@
 </div>
 </div>
 </div>
-
+</div>
+</div>
+</div>
+</div>
 <link rel="stylesheet" href="../Template/css/style.css">
