@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../Template/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 
 </head>
 
@@ -209,6 +210,9 @@
     </section>
 
 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script   src="../Template/js/flocon.js"></script>
 </body>
 
 </html>
