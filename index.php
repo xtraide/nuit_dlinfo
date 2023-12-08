@@ -20,6 +20,7 @@ if ($p == "index") {
     APP::setTitle();
 
     require "Views/Page/trueArticle.php";
+    require "Views/Page/fake_news.php";
 } else if ($p == "404") {
     App::getTitle("Page Not Found");
     App::notFound();
