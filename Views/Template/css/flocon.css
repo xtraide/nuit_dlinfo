@@ -1,0 +1,51 @@
+.flocon {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 100%;
+  }
+  
+  .anim1 {
+    width: 6px;
+    height: 6px;
+    animation: roulemapoule1 5s linear infinite;
+  }
+  
+  .anim2 {
+    width: 3px;
+    height: 3px;
+    background: #cccccc;
+    animation: roulemapoule2 5s linear infinite;
+  }
+  
+  .anim3 {
+    background: #eeeeee;
+    width: 4px;
+    height: 4px;
+    animation: roulemapoule3 5s ease infinite;
+  }
+  
+  @keyframes roulemapoule1 {
+    0%   { top: -4px; }
+    30%  { transform: translate(10px, 0); }
+    60%  { transform: translate(20px, 0); }
+    100% { top: calc(100% - 4px); transform: translate(5px, 0); }
+  }
+  
+  @keyframes roulemapoule2 {
+    0%   { top: -4px; }
+    20%  { transform: translate(30px, 0); }
+    40%  { transform: translate(0px, 0); }
+    60%  { transform: translate(0px, 0); }
+    100% { top: calc(100% - 4px); transform: translate(30px, 0); }
+  }
+  
+  @keyframes roulemapoule3 {
+    0%   { top: -4px; }
+    10%  { transform: translate(10px, 0); }
+    20%  { transform: translate(20px, 0); }
+    50%  { transform: translate(0px, 0); }
+    70%  { transform: translate(10px, 0); }
+    100% { top: calc(100% - 4px); transform: translate(20px, 0); }
+  }
