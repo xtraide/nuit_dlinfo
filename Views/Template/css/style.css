@@ -10,19 +10,23 @@ pour le deuxieme
 exs
 .first div li .lia{ color: #;} 
 */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 :root {
     --bg-principale: #FAF0D4;
     --color-principale: #00A65F; 
 
   }
-*{
-    margin: 0;
-    padding: 0;
 
-}
 body{
     background-color: #FAF0D4;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 .fakeArticle{
     width: 100%;
     position: relative;
@@ -57,30 +61,51 @@ body{
 }
 
 /*CSS du vrai article*/
-/* .trueArticle{
-    margin-top: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
-} */
-.trueArticle h1{
-    font-size: 2rem;
-    color: #00A65F;
+
+.special{
+    display: flex;
+    align-items: center;
+}
+
+.special p{
+    margin-right:10px;
+    color: var(--color-principale);
+}
+
+.hr{
+    border: #000000 solid 1px;
+    flex: 1;
+    /* transform: translate(-90deg); */
+}
+
+.chapeau p{
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 .titre_principal{
     text-transform: uppercase;
+    color: var(--color-principale);
+    font-size: 3rem;
+    margin-bottom: 50px;
 }
-.trueArt{
-    display: flex;
-    margin-top: 30px;
+
+.petite_intro{
+    font-size: 1.2rem;
 }
-.paragraphe{
-    text-justify: auto;
-}
-.chapeau{
+
+
+.image_intro img{
+    width: 100%;
+    object-fit: cover;
     margin-top: 20px;
-    margin-bottom: 30px;
 }
+
+/* .container_intro{
+} */
+
+
 
 
 
