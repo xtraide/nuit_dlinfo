@@ -35,6 +35,7 @@ function animateCountdown(startValue, endValue) {
 }
 
 export function verifier_reponse() {
+    console.log("12")
     const question = document.querySelector('.question');
     const reponse = document.querySelector('.reponse');
     const reponse_affiche = document.querySelector(".reponse_affiche");
@@ -53,35 +54,51 @@ export function verifier_reponse() {
 }
 //question 1
  function deuxième_question () {
+    console.log("123")
     const suivant_un = document.querySelector(".suivant_un");
     suivant_un.addEventListener("click", function () {
         document.querySelector(".one").style.display = "none";
         document.querySelector(".two").style.display = "block";
         document.querySelector(".three").style.display = "none";
         document.querySelector(".four").style.display = "none";
-
-        let bonne_reponse = "Hello";
-        const question = document.querySelector('.question');
-        const reponse2 = document.querySelector('.reponse_deux');
-        const reponse_affiche2 = document.querySelector(".reponse_affiche_deux");
-        let number = 0;
+        deuxième_question_suivant () 
         
     })
     
 }
 //question 2
 export function deuxième_question_suivant () {
-    const reponse2 = document.querySelector('.reponse_deux');
-    let bonne_reponse = "Hello";
+    console.log('question 2')
+    // const reponse2 = document.querySelector('.reponse_deux');
+    const boutons2 = document.querySelectorAll('.bouton_deux');
+    let bonne_reponse = "b";
     const reponse_affiche2 = document.querySelector(".reponse_affiche_deux");
-    if (reponse2.value === bonne_reponse) {
-        console.log("Bonne réponse");
-        reponse_affiche2.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + reponse2.value + "</p>"  + "<button class='suivant_deux'>suivant";
-    } else {
-        console.log("Essaie encore");
-        reponse_affiche2.innerHTML = "<p> Mauvaise réponse2!! <br> Votre réponse:" + reponse2.value + "<br> la bonne réponse était:"+ bonne_reponse +"</p>" + "<button class='suivant_deux'>suivant"
-    }
-    trois ()
+    boutons2.forEach(function(bouton_deux) {
+        bouton_deux.addEventListener('click', function () {
+            console.log('toto')
+              if (this.value === bonne_reponse) {
+            console.log("Bonne réponse");
+            reponse_affiche2.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + this.value + "</p>"  + "<button class='suivant_deux'>suivant"; 
+            trois ()
+        } else {
+            console.log("Essaie encore");
+            reponse_affiche2.innerHTML = "<p> Mauvaise réponse2!! <br> Votre réponse:" + this.value + "<br> la bonne réponse était:"+ bonne_reponse +"</p>" + "<button class='suivant_deux'>suivant";
+            trois ()
+        }
+        })
+      
+    })
+
+   
+    // const reponse_affiche2 = document.querySelector(".reponse_affiche_deux");
+    // if (reponse2.value === bonne_reponse) {
+    //     console.log("Bonne réponse");
+    //     reponse_affiche2.innerHTML = "<p> Bonne réponse2! <br>Votre réponse:" + reponse2.value + "</p>"  + "<button class='suivant_deux'>suivant";
+    // } else {
+    //     console.log("Essaie encore");
+    //     reponse_affiche2.innerHTML = "<p> Mauvaise réponse2!! <br> Votre réponse:" + reponse2.value + "<br> la bonne réponse était:"+ bonne_reponse +"</p>" + "<button class='suivant_deux'>suivant"
+    // }
+
 }
 function trois () {
     const suivant_un = document.querySelector(".suivant_deux");
