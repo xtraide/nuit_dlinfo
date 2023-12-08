@@ -15,18 +15,20 @@ exs
 *::before {
     box-sizing: border-box;
 }
+
 :root {
     --bg-principale: #FAF0D4;
     --color-principale: #00A65F;
 
-  }
+}
 
-body{
+body {
     background-color: #FAF0D4;
     padding-left: 30px;
     padding-right: 30px;
 }
-.fakeArticle{
+
+.fakeArticle {
     width: 100%;
     position: relative;
     margin-top: 10%;
@@ -64,13 +66,13 @@ body{
 
 /*CSS du vrai article*/
 
-.special{
+.special {
     display: flex;
     align-items: center;
 
 }
 
-.hr{
+.hr {
     border: black 1px solid;
     flex: 1;
     margin-left: 10px;
@@ -85,17 +87,21 @@ body{
     margin-top: 0;
 }
 
-.chapeau{
+.titre_principal_desk {
+    display: none;
+}
+
+.chapeau {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-.chapeau p{
+.chapeau p {
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.image_intro img{
+.image_intro img {
     width: 100%;
     object-fit: cover;
     margin-top: 20px;
@@ -227,4 +233,47 @@ body{
     border-radius: 50%;
     overflow: hidden;
     overflow: hidden;
+}
+
+
+@media screen and (min-width:600px) {
+    body {
+        padding: 50px;
+    }
+
+    .titre_principal_mobile {
+        display: none;
+    }
+
+    .titre_principal_desk {
+        display: block;
+        font-size: 4.5rem;
+    }
+
+    .container_intro{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text_intro {
+        width: 50%;
+    }
+
+    .text_intro p{
+        border-top: 1px solid black;
+        border-right: black 1px solid;
+        padding:50px;
+        font-size: 1.4rem;
+    }
+
+    .chapeau p{
+        font-size: 1.4rem;
+    }
+
+    .special p{
+        font-size: 1.4rem;
+        color: var(--color-principale);
+    }
+
+
 }

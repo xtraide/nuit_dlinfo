@@ -15,7 +15,8 @@
         <div class="hr"></div>
         </div>
         
-        <h1 class="titre_principal">L'urgence climatique, <br>et nous ?</h1>
+        <h1 class="titre_principal titre_principal_mobile">L'urgence climatique, <br>et nous ?</h1>
+        <h1 class="titre_principal titre_principal_desk">L'urgence climatique, et nous ?</h1>
         <section class="chapeau"><br>
             <p>Les champs'ions du meaux'de avion</p>
             <p>08 Décembre 2023, 8h</p> <br>
