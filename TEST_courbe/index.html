@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graph Chart</title>
+  <title><TITLE></TITLE></title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -12,11 +12,7 @@
   <script>
     // Données
     const data = [
-    {"year": 2015, "value": 1.125},
-  {"year": 2016, "value": 1.14423076923077},
-  {"year": 2017, "value": 1.17307692307692},
-  {"year": 2018, "value": 1.19230769230769},
-  {"year": 2019, "value": 1.22115384615385},
+   
   {"year": 2020, "value": 1.24519230769231},
   {"year": 2021, "value": 1.26923076923077},
   {"year": 2022, "value": 1.29326923076923},
@@ -100,8 +96,9 @@
 {"year": 2100, "value": 3.91346153846154}
 ];
 
-    // Préparation des données pour Chart.js
-    const labels = data.map(entry => entry.year);
+
+
+const labels = data.map(entry => entry.year);
     const values = data.map(entry => entry.value);
 
     // Création du graphique
@@ -128,7 +125,7 @@
       options: {
         scales: {
           x: {
-            type: 'linear',
+            type: 'category', // Utiliser une échelle de catégorie pour les années
             position: 'bottom',
             title: {
               display: true,
