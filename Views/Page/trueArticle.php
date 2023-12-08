@@ -19,19 +19,6 @@
         <section class="chapeau"><br>
             <p>Les champs'ions du meaux'de avion</p>
             <p>08 Décembre 2023, 8h</p> <br>
-            <!-- </section>
-        <p class="cap">Watch & share this report that's based on the work in Robert B. Stinnett's acclaimed book, "Day
-            of Deceit:</p>
-            <section class="trueArt">
-                <img src="" alt="ours polaire">
-                <div class="paragraphe">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </div>
-            </section> -->
 
 
             <div class="container">
