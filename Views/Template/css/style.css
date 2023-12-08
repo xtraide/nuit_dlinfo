@@ -28,40 +28,17 @@ body {
     padding-right: 30px;
 }
 
-.fakeArticle {
-    width: 100%;
-    position: relative;
-    margin-top: 10%;
-
-
+.fake_div {
+    color: black;
+    background-color: white;
 }
 
-.fakeArticle h1 {
-    font-size: 4.375rem;
-    margin-top: 30%;
-    font-weight: 100;
-    width: 80%;
-    margin: auto;
-    color: #00A65F;
+.contenu_1 {
+    margin-top: 30px;
 }
 
-.fakeArticle p {
-    width: 30%;
-    margin: auto;
-    margin-top: 15px;
-    margin-left: 10%;
-    font-weight: 100;
-
-}
-
-.cap {
-    font-size: 0.063rem;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    /*width: 80%;*/
-    margin: auto;
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
+.image_intro img{
+    margin-bottom: 20px;
 }
 
 /*CSS du vrai article*/
@@ -72,11 +49,18 @@ body {
 
 }
 
+.special2 {
+    color: black;
+}
+
 .hr {
     border: black 1px solid;
     flex: 1;
     margin-left: 10px;
+}
 
+.hr2 {
+    border: black dashed 1px;
 }
 
 .titre_principal {
@@ -85,6 +69,10 @@ body {
     font-size: 3rem;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.titre_principal2 {
+    color: black;
 }
 
 .titre_principal_desk {
@@ -250,29 +238,36 @@ body {
         font-size: 4.5rem;
     }
 
-    .container_intro{
+    .container_intro {
         display: flex;
         justify-content: space-between;
     }
 
     .text_intro {
-        width: 50%;
+        width: 40%;
     }
 
-    .text_intro p{
-        border-top: 1px solid black;
-        border-right: black 1px solid;
-        padding:50px;
+    .text_intro p {
+        border: black 1px solid;
+        padding: 50px;
         font-size: 1.4rem;
     }
 
-    .chapeau p{
+    .chapeau p {
         font-size: 1.4rem;
     }
 
-    .special p{
+    .special p {
         font-size: 1.4rem;
         color: var(--color-principale);
+    }
+
+    .image_intro {
+        width: 700px;
+    }
+
+    .container_intro {
+        border-bottom: dashed 3px black;
     }
 
 
