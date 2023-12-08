@@ -2,9 +2,11 @@
 export function showScreen(id) {
     const screens = document.querySelectorAll('body > section')
     // Masque tous les écrans
+    /** 
     screens.forEach((screen) => {
       screen.style.display = 'none'
     })
+    */ 
    
     // ... et affiche l'écran portant l'ID en paramètre
     const screen = document.querySelector(`#${id}`)
@@ -21,7 +23,7 @@ export function showScreen(id) {
  
     // Injecte le HTML dans la page
     const currentQuestion = document.querySelector('#current-question')
-    currentQuestion.innerHTML = html
+    currentQuestion.innerHTML = html;
   }
   
   export function showScore(quizzState) {
